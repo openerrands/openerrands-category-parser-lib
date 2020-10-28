@@ -89,9 +89,7 @@ internal class GPCCategoryServiceImpl(private val lang: SupportedLanguage) : Cat
         private const val XPATH_BRICK = "brick"
 
         private val REGEX_CLEANUP = listOf(
-            Regex("[/()%]+") to " ",
-            Regex("\\s[-]\\s") to " ",
-            Regex("[.]\\s") to " "
+            Regex("[/()%]+|\\s[-]\\s|[.]\\s") to " "
         )
 
         private val DOC_FACTORY = initGPCDocFactory()
