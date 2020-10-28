@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  FAIR USE: The following is extracted from GS1's GPC-EN data set, published at:
+      https://www.gs1.org/standards/gpc
+  The full data set is free to download, but is only available for use by license. Such a
+  small excerpt should fall under the United States fair use doctrine.
+-->
+<!--
+  NOTE: XML schema file references have been stripped from the original file
+-->
+
+<sh:StandardBusinessDocument
+        xmlns:sh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader"
+        xmlns:eanucc="urn:ean.ucc:2"
+        xmlns:gpc="urn:ean.ucc:gpc:2"
+>
+    <sh:StandardBusinessDocumentHeader>
+        <sh:HeaderVersion>2.2</sh:HeaderVersion>
+        <sh:Sender>
+            <sh:Identifier Authority="GS1">0000000000000</sh:Identifier>
+            <sh:ContactInformation>
+                <sh:Contact>Mike Mowad</sh:Contact>
+                <sh:EmailAddress>gsmp@gs1.org</sh:EmailAddress>
+                <sh:FaxNumber>+1 609-557-4599</sh:FaxNumber>
+                <sh:TelephoneNumber>+1 609-557-4568</sh:TelephoneNumber>
+                <sh:ContactTypeIdentifier></sh:ContactTypeIdentifier>
+            </sh:ContactInformation>
+        </sh:Sender>
+        <sh:Receiver>
+            <sh:Identifier Authority="GS1">0000000000000</sh:Identifier>
+            <sh:ContactInformation>
+                <sh:Contact>Mike Mowad</sh:Contact>
+                <sh:EmailAddress>gsmp@gs1.org</sh:EmailAddress>
+                <sh:FaxNumber>+1 609-557-4599</sh:FaxNumber>
+                <sh:TelephoneNumber>+1 609-557-4568</sh:TelephoneNumber>
+                <sh:ContactTypeIdentifier></sh:ContactTypeIdentifier>
+            </sh:ContactInformation>
+        </sh:Receiver>
+        <sh:DocumentIdentification>
+            <sh:Standard>GS1</sh:Standard>
+            <sh:TypeVersion>2.0.2</sh:TypeVersion>
+            <sh:InstanceIdentifier>100003</sh:InstanceIdentifier>
+            <sh:Type>Gs1Schema</sh:Type>
+            <sh:MultipleType>false</sh:MultipleType>
+            <sh:CreationDateAndTime>2005-09-19T12:00:01.000</sh:CreationDateAndTime>
+        </sh:DocumentIdentification>
+    </sh:StandardBusinessDocumentHeader>
+    <eanucc:message>
+        <entityIdentification>
+            <uniqueCreatorIdentification>MSG-123-20050919</uniqueCreatorIdentification>
+            <contentOwner>
+                <gln>0000000000000</gln>
+            </contentOwner>
+        </entityIdentification>
+        <gpc:gs1Schema>
+            <schema>
+                <currentVersion>as at 01062020 EN</currentVersion>
+                <previousVersion></previousVersion>
+                <segment code="50000000" text="Food/Beverage/Tobacco" definition="">
+                    <family code="50200000" text="Beverages" definition="">
+                        <class code="50201700" text="Coffee/Tea/Substitutes" definition="">
+                            <brick code="10000111" text="Coffee - Beans/Ground" definition="Includes any products that can be described/observed as a whole/ground bean of coffee. Whole beans must be ground by the user prior to consumption and can be used pure or blended with different coffee bean types, whereas ground coffee is prepared for consumption by the addition of water and/or milk. Includes all varieties of coffee beans such as arabica and robusta, and those from various countries such as Columbia, Ethiopia and Costa Rica Excludes products such as Coffee Beans that are consumed as confectionery and Instant Coffee. Also excludes Coffee Substitutes.">
+                                <attType code="20000750" text="Botanical Variety" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify the particular botanical variety of coffee or coffee substitute.">
+                                    <attValue code="30000207" text="ARABICA" definition="This term is used to describe coffee of the type Coffea arabica ."/>
+                                    <attValue code="30000370" text="BLEND" definition=""/>
+                                    <attValue code="30001427" text="LIBERICA" definition=""/>
+                                    <attValue code="30014441" text="ROBUSTA" definition="This term is used to describe coffee of the type Coffea canephora (robusta)"/>
+                                    <attValue code="30002515" text="UNCLASSIFIED" definition="This term is used to describe those product attributes that are unable to be classified within their specific market; e.g. goat&apos;s cheese - goat&apos;s cheeses is often generically labelled and cannot be further classified."/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                </attType>
+                                <attType code="20000352" text="Formation" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify the state in which the product is sold.">
+                                    <attValue code="30015641" text="COARSE GROUND" definition="Coarse Ground Coffee is most commonly used for French Press coffee."/>
+                                    <attValue code="30000295" text="COFFEE BEAN" definition=""/>
+                                    <attValue code="30015642" text="EXTRA COURSE GROUND" definition="Extra Coarse Ground Coffee commonly used for Cold Brewing methods."/>
+                                    <attValue code="30015643" text="EXTRA FINE GROUND" definition="Extra Fine Ground Coffee commonly used for Turkish Coffee."/>
+                                    <attValue code="30015644" text="FINE GROUND" definition="Fine Ground Coffee commonly used for Espresso."/>
+                                    <attValue code="30015640" text="GROUND - UNSPECIFIED" definition="This term is used to describe those product attributes that are an unspecified grind given existing or available product information."/>
+                                    <attValue code="30015645" text="MEDIUM COURSE GROUND" definition="Medium Coarse Coffee is most commonly used for Solo Brewers and Chemex&#174; Brewers."/>
+                                    <attValue code="30015646" text="MEDIUM FINE GROUND" definition="Medium Fine Ground Coffee commonly used for Pourover Cones, Siphon Brewers and Vacuum Pots."/>
+                                    <attValue code="30015647" text="MEDIUM GROUND" definition="Medium Ground coffee commonly used Drip brewing methods."/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                </attType>
+                                <attType code="20000224" text="If Decaffeinated" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify whether or not the product is decaffeinated.">
+                                    <attValue code="30002960" text="NO" definition=""/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                    <attValue code="30002654" text="YES" definition=""/>
+                                </attType>
+                                <attType code="20000239" text="If Flavoured" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify whether or not the product is flavoured.">
+                                    <attValue code="30002960" text="NO" definition=""/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                    <attValue code="30002654" text="YES" definition=""/>
+                                </attType>
+                                <attType code="20000142" text="If Organic" definition="Indicates, with reference to the product branding, labelling or packaging the descriptive term that is used by the product manufacturer to identify the presence of an industry recognized &quot;organic&quot; certification upon the product labelling or packaging.">
+                                    <attValue code="30002960" text="NO" definition=""/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                    <attValue code="30002654" text="YES" definition=""/>
+                                </attType>
+                                <attType code="20000501" text="Origin of Coffee" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the manufacturer of coffee to identify the specific country in which the product has been produced.">
+                                    <attValue code="30005832" text="BRAZIL - BAHIA" definition=""/>
+                                    <attValue code="30005833" text="BRAZIL - ESPIRITO SANTO" definition=""/>
+                                    <attValue code="30005834" text="BRAZIL - GOIAS" definition=""/>
+                                    <attValue code="30005835" text="BRAZIL - MINAS GERAIS" definition=""/>
+                                    <attValue code="30005836" text="BRAZIL - PARANA" definition=""/>
+                                    <attValue code="30005837" text="BRAZIL - RIO DE JANEIRO" definition=""/>
+                                    <attValue code="30005838" text="BRAZIL - RONDONIA" definition=""/>
+                                    <attValue code="30005839" text="BRAZIL - SAO PAULO" definition=""/>
+                                    <attValue code="30005840" text="BRAZIL - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30006207" text="CANADA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30006212" text="CHINA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005841" text="COLOMBIA - BUCARAMANGA" definition=""/>
+                                    <attValue code="30005842" text="COLOMBIA - HUILA" definition=""/>
+                                    <attValue code="30005843" text="COLOMBIA - MAGDELENA" definition=""/>
+                                    <attValue code="30005844" text="COLOMBIA - MEDELLIN" definition=""/>
+                                    <attValue code="30005846" text="COLOMBIA - NARINO" definition=""/>
+                                    <attValue code="30005845" text="COLOMBIA - POPAYAN" definition=""/>
+                                    <attValue code="30005847" text="COSTA - RICA - ALAJEULA" definition=""/>
+                                    <attValue code="30005848" text="COSTA - RICA - CENTRAL VALLEY" definition=""/>
+                                    <attValue code="30005849" text="COSTA - RICA - HEREDIA" definition=""/>
+                                    <attValue code="30005850" text="COSTA - RICA - NARANJO" definition=""/>
+                                    <attValue code="30005851" text="COSTA - RICA - TARRAZU" definition=""/>
+                                    <attValue code="30005852" text="COSTA - RICA - TRES RIOS" definition=""/>
+                                    <attValue code="30005853" text="COSTA - RICA - VOLCAN POAS" definition=""/>
+                                    <attValue code="30011283" text="COTE D&apos;IVOIRE - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30006647" text="ECUADOR - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005854" text="ETHIOPIA - BEBEKA" definition=""/>
+                                    <attValue code="30005855" text="ETHIOPIA - DJIMMAH" definition=""/>
+                                    <attValue code="30005856" text="ETHIOPIA - HARRAR" definition=""/>
+                                    <attValue code="30005857" text="ETHIOPIA - LEKEMPTI" definition=""/>
+                                    <attValue code="30005858" text="ETHIOPIA - LIMMU" definition=""/>
+                                    <attValue code="30005859" text="ETHIOPIA - SIDAMO" definition=""/>
+                                    <attValue code="30005860" text="ETHIOPIA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005861" text="ETHIOPIA - YERGACHEFFE" definition=""/>
+                                    <attValue code="30005862" text="GUATEMALA - ANTIGUA" definition=""/>
+                                    <attValue code="30005863" text="GUATEMALA - ATITLAN" definition=""/>
+                                    <attValue code="30005864" text="GUATEMALA - COBAN" definition=""/>
+                                    <attValue code="30005865" text="GUATEMALA - HUE HUE TENANGO" definition=""/>
+                                    <attValue code="30005866" text="GUATEMALA - SAN MARCOS" definition=""/>
+                                    <attValue code="30005867" text="GUATEMALA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005868" text="HAWAII - KAUAI" definition=""/>
+                                    <attValue code="30005869" text="HAWAII - KONA" definition=""/>
+                                    <attValue code="30005870" text="HAWAII - MAUI" definition=""/>
+                                    <attValue code="30005871" text="HAWAII - MOLOKAI" definition=""/>
+                                    <attValue code="30005872" text="HAWAII - OAHU" definition=""/>
+                                    <attValue code="30005873" text="HAWAII - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30006648" text="HONDURAS - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005874" text="INDIA - KARNATAKA" definition=""/>
+                                    <attValue code="30005875" text="INDIA - KERALA" definition=""/>
+                                    <attValue code="30005876" text="INDIA - MALABAR" definition=""/>
+                                    <attValue code="30005877" text="INDIA - MYSORE" definition=""/>
+                                    <attValue code="30005878" text="INDIA - TAMILNADU" definition=""/>
+                                    <attValue code="30005879" text="INDIA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005880" text="INDONESIA - JAVA - CENTRAL ISLAND" definition=""/>
+                                    <attValue code="30005881" text="INDONESIA - JAVA - EASTERN ISLAND" definition=""/>
+                                    <attValue code="30005882" text="INDONESIA - JAVA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005883" text="INDONESIA - JAVA - WESTERN ISLAND" definition=""/>
+                                    <attValue code="30005884" text="INDONESIA - SULAWESI - TOROJALAND" definition=""/>
+                                    <attValue code="30005885" text="INDONESIA - SULAWESI - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005886" text="INDONESIA - SUMATRA - LAKE TOBA" definition=""/>
+                                    <attValue code="30005887" text="INDONESIA - SUMATRA - LAUT TAWAR LAKE" definition=""/>
+                                    <attValue code="30005888" text="INDONESIA - SUMATRA - LINTONG NIHUTA" definition=""/>
+                                    <attValue code="30005889" text="INDONESIA - SUMATRA - SUMBUL" definition=""/>
+                                    <attValue code="30005890" text="INDONESIA - SUMATRA - TAKENGON" definition=""/>
+                                    <attValue code="30005891" text="INDONESIA - SUMATRA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005892" text="INDONESIA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005893" text="JAMAICA - BLUE MOUNTAINS" definition=""/>
+                                    <attValue code="30005894" text="JAMAICA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005895" text="KENYA - KAJIADO" definition=""/>
+                                    <attValue code="30005896" text="KENYA - KASII" definition=""/>
+                                    <attValue code="30011279" text="KENYA - KITALE" definition=""/>
+                                    <attValue code="30005897" text="KENYA - MOUNT KENYA" definition=""/>
+                                    <attValue code="30005898" text="KENYA - NAKURU" definition=""/>
+                                    <attValue code="30005899" text="KENYA - NYANZA" definition=""/>
+                                    <attValue code="30005900" text="KENYA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005901" text="MEXICO - CHIAPAS" definition=""/>
+                                    <attValue code="30005902" text="MEXICO - COATEPEC" definition=""/>
+                                    <attValue code="30005903" text="MEXICO - OAXACA" definition=""/>
+                                    <attValue code="30005904" text="MEXICO - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005905" text="MEXICO - VERACRUZ" definition=""/>
+                                    <attValue code="30005906" text="PANAMA - BOQUETE" definition=""/>
+                                    <attValue code="30005907" text="PANAMA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005908" text="PAPUA NEW GUINEA - HIGHLANDS" definition=""/>
+                                    <attValue code="30005909" text="PAPUA NEW GUINEA - MOROBE" definition=""/>
+                                    <attValue code="30005910" text="PAPUA NEW GUINEA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005911" text="PERU - CHANCHAMAYA" definition=""/>
+                                    <attValue code="30005912" text="PERU - CUZCO" definition=""/>
+                                    <attValue code="30005913" text="PERU - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30011278" text="SENEGAL - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005914" text="TANZANIA - HIGHLANDS BETWEEN LAKE NYASSA/TANJANYIKA" definition=""/>
+                                    <attValue code="30005915" text="TANZANIA - MOUNT KILIMANJARO" definition=""/>
+                                    <attValue code="30005916" text="TANZANIA - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30002515" text="UNCLASSIFIED" definition="This term is used to describe those product attributes that are unable to be classified within their specific market; e.g. goat&apos;s cheese - goat&apos;s cheeses is often generically labelled and cannot be further classified."/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                    <attValue code="30011277" text="VIETNAM - UNCLASSIFIED" definition=""/>
+                                    <attValue code="30005917" text="YEMEN - HIRAZI" definition=""/>
+                                    <attValue code="30005918" text="YEMEN - MATTARI" definition=""/>
+                                    <attValue code="30005919" text="YEMEN - RAIMI" definition=""/>
+                                    <attValue code="30005920" text="YEMEN - SAN&apos;ANI" definition=""/>
+                                    <attValue code="30005921" text="YEMEN - UNCLASSIFIED" definition=""/>
+                                </attType>
+                                <attType code="20002859" text="Preparation Format" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify whether or not the product contains pre-measured packets, is loose or bagged, etc..">
+                                    <attValue code="30015648" text="COFFEE/TEA BAG" definition="This term is used for pre-measured amount of the product in a porous bag, which is to be steeped in hot water."/>
+                                    <attValue code="30015651" text="DRINK POD/PAD" definition="This term is used for pre-measured product in a self-contained packet enveloped by a filter used in drip machines which eliminates the mess of cleaning out old grounds. Includes Frac Pacs and T-Discs."/>
+                                    <attValue code="30015649" text="HOT DRINK CAPSULE" definition="This term is used for pre-measured product in a self-contained packet made out of plastic or aluminium opened by the machine."/>
+                                    <attValue code="30015650" text="LOOSE - DRINK" definition="This term is used for product that is not pre-measured but is generally spooned into the machine or container for the preparation of the drink."/>
+                                    <attValue code="30002515" text="UNCLASSIFIED" definition="This term is used to describe those product attributes that are unable to be classified within their specific market; e.g. goat&apos;s cheese - goat&apos;s cheeses is often generically labelled and cannot be further classified."/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                </attType>
+                                <attType code="20000155" text="Roast of Coffee" definition="Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to describe the degree to which the coffee has been roasted.">
+                                    <attValue code="30000863" text="DARK ROAST COFFEE" definition=""/>
+                                    <attValue code="30002765" text="LIGHT ROAST COFFEE" definition=""/>
+                                    <attValue code="30001562" text="MEDIUM" definition=""/>
+                                    <attValue code="30002515" text="UNCLASSIFIED" definition="This term is used to describe those product attributes that are unable to be classified within their specific market; e.g. goat&apos;s cheese - goat&apos;s cheeses is often generically labelled and cannot be further classified."/>
+                                    <attValue code="30002518" text="UNIDENTIFIED" definition="This term is used to describe those product attributes that are unidentifiable given existing or available product information."/>
+                                    <attValue code="30003259" text="UNROASTED" definition=""/>
+                                </attType>
+                            </brick>
+                        </class>
+                    </family>
+                </segment>
+            </schema>
+        </gpc:gs1Schema>
+    </eanucc:message>
+</sh:StandardBusinessDocument>
