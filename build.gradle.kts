@@ -1,4 +1,5 @@
 import org.jfrog.gradle.plugin.artifactory.dsl.*
+import groovy.lang.GroovyObject
 
 plugins {
     kotlin("jvm") version "1.4.10"
@@ -45,13 +46,25 @@ tasks {
     }
 }
 
+publishing {
+    (publications) {
+        register("mavenJava", MavenPublication::class) {
+            from(components["java"])
+        }
+    }
+}
+
 artifactory {
-    setContextUrl("https://openerrands.jfrog.io/artifactory/OpenErrands/")
+    setContextUrl("https://openerrands.jfrog.io/artifactory/")
     publish(delegateClosureOf<PublisherConfig> {
         repository(delegateClosureOf<DoubleDelegateWrapper> {
             setProperty("repoKey", "OpenErrandsLocal")
             setProperty("username", "openerrandsci")
             setProperty("password", System.getenv("ARTIFACTORY_PUBLISH_PASSWORD") ?: "nopassword")
+            setProperty("maven", true)
+        })
+        defaults(delegateClosureOf<GroovyObject> {
+            invokeMethod("publications", "mavenJava")
         })
     })
 }
