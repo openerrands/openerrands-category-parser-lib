@@ -1,4 +1,4 @@
-package util.opennlp
+package cloud.openerrands.opennlp
 
 import opennlp.tools.postag.POSModel
 import opennlp.tools.postag.POSTaggerME

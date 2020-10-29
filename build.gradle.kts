@@ -9,7 +9,6 @@ plugins {
     id("maven-publish")
     id("com.jfrog.artifactory") version "4.18.0"
 }
-
 group = "cloud.openerrands"
 version = "1.0.0"
 
@@ -43,6 +42,9 @@ tasks {
         reports {
             xml.isEnabled = true
         }
+    }
+    publish {
+        finalizedBy(artifactoryPublish)
     }
 }
 

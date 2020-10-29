@@ -1,11 +1,11 @@
-package product
+package cloud.openerrands.product
 
 import org.dom4j.Document
 import org.dom4j.DocumentFactory
 import org.dom4j.Element
 import org.dom4j.Node
 import org.dom4j.io.STAXEventReader
-import util.opennlp.SupportedLanguage
+import cloud.openerrands.opennlp.SupportedLanguage
 import java.io.BufferedInputStream
 import java.io.InputStream
 import java.util.zip.ZipEntry

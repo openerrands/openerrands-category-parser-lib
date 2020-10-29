@@ -1,6 +1,6 @@
-package product
+package cloud.openerrands.product
 
-import util.opennlp.SupportedLanguage
+import cloud.openerrands.opennlp.SupportedLanguage
 import java.io.InputStream
 
 data class Category(val id: String, val name: String, val stems: Collection<String>)
