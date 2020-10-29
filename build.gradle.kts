@@ -51,7 +51,7 @@ artifactory {
         repository(delegateClosureOf<DoubleDelegateWrapper> {
             setProperty("repoKey", "OpenErrandsLocal")
             setProperty("username", "openerrandsci")
-            setProperty("password", System.getenv("ARTIFACTORY_CI_PASSWORD") ?: "nopassword")
+            setProperty("password", System.getenv("ARTIFACTORY_PUBLISH_PASSWORD") ?: "nopassword")
         })
     })
 }
