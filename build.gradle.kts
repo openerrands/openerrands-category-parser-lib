@@ -1,15 +1,21 @@
+import org.jfrog.gradle.plugin.artifactory.dsl.*
+
 plugins {
+    kotlin("jvm") version "1.4.10"
     id("idea")
     id("java-library")
     id("jacoco")
-    kotlin("jvm") version "1.4.10"
+    id("maven-publish")
+    id("com.jfrog.artifactory") version "4.18.0"
 }
 
 group = "cloud.openerrands"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+    maven {
+        url = uri("https://openerrands.jfrog.io/artifactory/OpenErrands/")
+    }
 }
 
 dependencies {
@@ -38,3 +44,18 @@ tasks {
         }
     }
 }
+
+artifactory {
+    setContextUrl("https://openerrands.jfrog.io/artifactory/OpenErrands/")
+    publish(delegateClosureOf<PublisherConfig> {
+        repository(delegateClosureOf<DoubleDelegateWrapper> {
+            setProperty("repoKey", "OpenErrandsLocal")
+            setProperty("username", "openerrandsci")
+            setProperty("password", System.getenv("ARTIFACTORY_CI_PASSWORD") ?: "nopassword")
+        })
+    })
+}
+
+
+
+
