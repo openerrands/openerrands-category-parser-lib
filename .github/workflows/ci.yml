@@ -20,6 +20,8 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build/Publish with Gradle
+      env:
+        ARTIFACTORY_PUBLISH_PASSWORD = ${{ secrets.ARTIFACTORY_PUBLISH_PASSWORD }}
       run: ./gradlew build publish
     - name: Publish Coverage to CodeCov.io
       run: bash <(curl -s https://codecov.io/bash)
